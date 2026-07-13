@@ -12,9 +12,10 @@ def is_valid(s):
     elif  s.isalnum() == False: return False
     flag = 0
     for x in s:
+        if x == "0" and flag == 0: return False
         if x.isdigit(): flag = 1
         if flag and x.isalpha(): return False
     else: return True
 
-
-main()
+if __name__ == "__main__":
+    main()
