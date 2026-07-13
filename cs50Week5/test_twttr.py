@@ -1,4 +1,7 @@
-import twttr
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+from cs50Week2 import twttr
 import string
 import random
 VOWELS = ["a","A", "e","E", "i", "I", "o", "O", "u", "U"]
@@ -24,5 +27,5 @@ def test_shorten():
     
     except AssertionError:
         print("Fail)")
-def main():
-    generate_random_string()
+# def main():
+#     test_shorten()
