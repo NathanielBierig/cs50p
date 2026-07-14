@@ -1,5 +1,4 @@
 import sys
-from pathlib import Path
 import csv
 from tabulate import tabulate
 
